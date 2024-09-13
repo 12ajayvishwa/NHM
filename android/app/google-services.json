@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017623795055",
+    "project_id": "pvi-nhm",
+    "storage_bucket": "pvi-nhm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017623795055:android:2e839aaab4e3b47c97449a",
+        "android_client_info": {
+          "package_name": "com.example.pvi_nhm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD96fZAFeL6OTmbvPmE1h0VqhLlcFp1JsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
