@@ -185,7 +185,7 @@ class DoctorCardWidget extends StatelessWidget {
                             SizedBox(
                               width: 150.w,
                               child: Text(
-                                "Date : ${DateFormat('yyyy-MM-dd').format(date! as DateTime)}" ??
+                                "Date : ${DateFormat('yyyy-MM-dd').format(date!)}" ??
                                     "",
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTextStyles.text14BlackMedium
@@ -197,7 +197,7 @@ class DoctorCardWidget extends StatelessWidget {
                   age == null || date == null
                       ? Container()
                       : isUserList == false
-                          ? Divider()
+                          ? const Divider()
                           : Container(),
                   approvalDoc != null
                       ? SizedBox(

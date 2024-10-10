@@ -1,13 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pvi_nhm/controllers/notification_controller.dart';
 import 'package:pvi_nhm/core/constants/session_manager.dart';
 import 'core/constants/app_export.dart';
 import 'core/routes/app_routes.dart';
 import 'firebase_options.dart';
 import 'notification/notification_service.dart';
 import 'presentation/auth/binding/auth_binding.dart';
-import 'presentation/auth/login_screen.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 

@@ -1,6 +1,4 @@
 // ignore_for_file: avoid_print
-import 'package:pvi_nhm/data/model/user_list_model.dart';
-
 import '../core/constants/app_export.dart';
 import '../core/constants/api_network.dart';
 import '../core/routes/app_routes.dart';

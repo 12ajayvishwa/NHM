@@ -1,12 +1,9 @@
 import 'package:pvi_nhm/core/constants/app_export.dart';
 import 'package:pvi_nhm/data/model/user_list_model.dart';
-
 import '../core/constants/api_network.dart';
 import '../core/routes/app_routes.dart';
-import '../custom_widget/custom_snackbar.dart';
 import '../data/apiClient/api_client.dart';
 import '../data/apiClient/http_response.dart';
-import '../data/model/patient_model.dart';
 import 'auth_controller.dart';
 import '../utils/custom_toast.dart';
 import 'setting_controller.dart';

@@ -1,16 +1,12 @@
 import 'dart:convert';
-
+import 'package:flutter/foundation.dart';
 import 'package:pvi_nhm/controllers/user_controller.dart';
 import 'package:pvi_nhm/data/model/patient_model.dart';
-import 'package:pvi_nhm/presentation/dashboard/reasign_surgery/assigned_screen.dart';
-
 import '../core/constants/api_network.dart';
 import '../core/constants/app_export.dart';
-import '../core/constants/session_manager.dart';
 import '../core/routes/app_routes.dart';
 import '../data/apiClient/api_client.dart';
 import '../data/apiClient/http_response.dart';
-import '../data/model/patient_model.dart';
 import '../data/model/reassign_surgery_model.dart';
 import 'auth_controller.dart';
 import '../utils/custom_snackbar.dart';
@@ -172,7 +168,9 @@ class PatientController extends GetxController {
       //   {"column": "id", "order": "dsc"}
       // ],
     };
-    print(payload);
+    if (kDebugMode) {
+      print(payload);
+    }
     try {
       var response = await api.post(
         ApiNetwork.reassignSurgeries,

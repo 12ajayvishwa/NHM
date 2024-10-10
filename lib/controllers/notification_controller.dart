@@ -8,6 +8,7 @@ import '../core/constants/session_manager.dart';
 import '../data/apiClient/http_response.dart';
 import '../utils/custom_toast.dart';
 
+// ignore: prefer_typing_uninitialized_variables
 var unreadNotification;
 
 class NotificationController extends GetxController {

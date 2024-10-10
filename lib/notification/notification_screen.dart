@@ -6,7 +6,6 @@ import '../../utils/custom_toast.dart';
 import '../../widgets/custom_time_ago.dart';
 import '../controllers/notification_controller.dart';
 import '../core/constants/app_export.dart';
-import '../core/constants/session_manager.dart';
 import '../data/model/notification_model.dart';
 import '../theme/color_constants.dart';
 import '../widgets/app_bar/custom_app_bar.dart';

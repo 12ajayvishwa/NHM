@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ? Colors.white
                                 : Colors.transparent,
                             expandedHeight:
-                                homeController.isExpanded.value ? 470.h : 470.h,
+                                homeController.isExpanded.value ? 500.h : 480.h,
                             pinned: true,
                             snap: false,
                             flexibleSpace: FlexibleSpaceBar(
@@ -272,7 +272,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // DateTime surgeryDate = DateFormat("yyyy-MM-ddTHH:mm:ss.SSSZ")
               //     .parse(upcomingPatientList..surgeryDate!);
-              final dateFormat = DateFormat('dd');
+              final  dateFormat = DateFormat('dd');
               final dateDay = DateFormat('EEE');
               // final formattedDate =
               //     dateFormat.format(surgeryDate).toUpperCase();
@@ -294,21 +294,21 @@ class _HomeScreenState extends State<HomeScreen> {
                           arguments: upcomingPatientList);
                     },
                     title: upcomingPatientList.title,
-                    age: upcomingPatientList.patient!.age,
+                    age: upcomingPatientList.patient.age,
                     date: upcomingPatientList.dateTime,
-                    name: upcomingPatientList.patient!.patientName,
-                    designation: upcomingPatientList.patient!.electiveSurgery,
-                    gender: upcomingPatientList.patient!.gender,
+                    name: upcomingPatientList.patient.patientName,
+                    designation: upcomingPatientList.patient.electiveSurgery,
+                    gender: upcomingPatientList.patient.gender,
                     status: upcomingPatientList.status,
                     approvalDoc: SessionManager.getUserTypeId() == "3"
-                        ? "Approval : ${upcomingPatientList.approver!.name.toString()}"
+                        ? "Approval : ${upcomingPatientList.approver.name.toString()}"
                         : SessionManager.getUserTypeId() == "2"
-                            ? "Doctor :  ${upcomingPatientList.doctor!.name.toString()}"
+                            ? "Doctor :  ${upcomingPatientList.doctor.name.toString()}"
                             : SessionManager.getUserTypeId() == "1"
-                                ? "Approval : ${upcomingPatientList.approver!.name.toString()}"
+                                ? "Approval : ${upcomingPatientList.approver.name.toString()}"
                                 : null,
                     secondApDoc: SessionManager.getUserTypeId() == "1"
-                        ? "Doctor :  ${upcomingPatientList.doctor!.name.toString()}"
+                        ? "Doctor :  ${upcomingPatientList.doctor.name.toString()}"
                         : null,
                   ));
             }),
@@ -377,7 +377,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisSpacing: 10.h,
                           mainAxisExtent: 80.h,
                           crossAxisCount: 3),
-                      padding: EdgeInsets.all(0.0),
+                      padding: const EdgeInsets.all(0.0),
                       scrollDirection: Axis.vertical,
                       physics: homeController.isExpanded.value
                           ? const BouncingScrollPhysics()

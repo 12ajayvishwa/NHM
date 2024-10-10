@@ -106,6 +106,7 @@ class AppRoutes {
     GetPage(name: PANDING_PATIENT, page: () => const PandingPatientScreen()),
     GetPage(name: All_DOC, page: () => const AllDoctorScreen()),
     GetPage(name: ALL_SUP, page: () => const AllSupervisorScreen()),
+    GetPage(name: ALL_PATIENT, page: () => const AllPatientScreen()),
     GetPage(name: ALL_DONE, page: () => const DoneScreen()),
     GetPage(name: Reassign_Surgery, page: () =>  ReassignSurgery()),
     GetPage(name: Assigned_Surgery, page: () => const AssignedSurgeryScreen()),
