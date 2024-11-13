@@ -20,7 +20,7 @@ import '../../auth/signup_screen.dart';
 enum Verify { yes, no }
 
 class AddUserScreen extends StatefulWidget {
-  AddUserScreen({super.key});
+  const AddUserScreen({super.key});
 
   @override
   State<AddUserScreen> createState() => _AddUserScreenState();
@@ -88,7 +88,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
   addUserForm(size) {
     return Obx(() {
       if (authController.rxRequestStatus.value == Status.loading) {
-        return CustomLoading();
+        return const CustomLoading();
       }
       return Container(
         height: size.height,
@@ -107,7 +107,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
         child: Form(
           key: _formKey,
           child: ListView(
-            padding: EdgeInsets.all(0),
+            padding: const EdgeInsets.all(0),
             children: [
               CustomTextFormField(
                 hintText: "Name",
@@ -122,6 +122,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   if (value!.isEmpty) {
                     return "Please enter your name";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 15.h),
@@ -241,6 +242,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   if (value!.isEmpty) {
                     return "Please enter registration no.";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 10.h),
@@ -256,6 +258,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   if (value!.isEmpty) {
                     return "Please enter address";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 10.h),
@@ -271,6 +274,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   if (value!.isEmpty) {
                     return "Please enter password";
                   }
+                  return null;
                 },
               ),
               // SizedBox(height: 10.h),

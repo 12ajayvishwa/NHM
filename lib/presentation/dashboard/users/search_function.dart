@@ -1,10 +1,7 @@
 import 'package:pvi_nhm/core/constants/app_export.dart';
-import 'package:pvi_nhm/data/model/patient_model.dart';
 import 'package:pvi_nhm/data/model/user_list_model.dart';
 import 'package:timeago/timeago.dart' as timeago;
-
 import '../../../controllers/auth_controller.dart';
-import '../../../controllers/patient_controller.dart';
 import '../../../controllers/user_controller.dart';
 import '../../../data/apiClient/http_response.dart';
 

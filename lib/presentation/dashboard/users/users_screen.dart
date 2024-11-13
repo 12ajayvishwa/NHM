@@ -2,7 +2,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pvi_nhm/widgets/doctor_card_widget.dart';
 import '../../../../core/constants/app_export.dart';
-import '../../../controllers/patient_controller.dart';
 import '../../../controllers/user_controller.dart';
 import '../../../core/constants/api_network.dart';
 import '../../../core/routes/app_routes.dart';
@@ -17,7 +16,7 @@ import '../../../controllers/auth_controller.dart';
 import 'search_function.dart';
 
 class UsersScreen extends StatefulWidget {
-  UsersScreen({super.key});
+  const UsersScreen({super.key});
 
   @override
   State<UsersScreen> createState() => _UsersScreenState();
@@ -119,7 +118,7 @@ class _UsersScreenState extends State<UsersScreen> {
                       );
                     }
                     return ListView.builder(
-                      padding: EdgeInsets.all(0),
+                      padding: const EdgeInsets.all(0),
                       itemCount: filteredPatient.length,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {

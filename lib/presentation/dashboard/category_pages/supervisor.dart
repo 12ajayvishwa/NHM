@@ -21,7 +21,7 @@ class _AllSupervisorScreenState extends State<AllSupervisorScreen> {
           appBarContainer(size, title: "All Supervisor", isLeading: true),
           Expanded(
             child: Container(
-              child: Center(
+              child: const Center(
                 child: Text("All Supervisor"),
               ),
             ),

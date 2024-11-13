@@ -10,7 +10,7 @@ class TermConditionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(                                           
       backgroundColor: AppColors.whiteA700,
       appBar: CustomAppBar(
         title: "Term & Condition",
@@ -46,7 +46,6 @@ class TermConditionScreen extends StatelessWidget {
               ),
               Text(
                 """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem.
-          
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem.""",
                 style: AppTextStyles.text16BlackRaguler,
               ),

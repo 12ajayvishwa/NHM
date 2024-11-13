@@ -20,7 +20,7 @@ class _AllPatientScreenState extends State<AllPatientScreen> {
         children: [
           appBarContainer(size, title: "All Patient", isLeading: true),
           Expanded(
-            child: Container(
+            child:  Container(
               child: const Center(
                 child: Text("All Patient"),
               ),

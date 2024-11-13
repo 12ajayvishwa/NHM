@@ -1,24 +1,18 @@
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
-
 import '../../../controllers/auth_controller.dart';
 import '../../../controllers/patient_controller.dart';
 import '../../../controllers/user_controller.dart';
 import '../../../core/constants/app_export.dart';
 import '../../../data/apiClient/http_response.dart';
 import '../../../theme/color_constants.dart';
-import '../../../theme/text_style.dart';
 import '../../../utils/calender_theme.dart';
-import '../../../utils/validation_functions.dart';
 import '../../../widgets/app_bar_container.dart';
 import '../../../widgets/custom_circuler_loader.dart';
 import '../../../widgets/custom_dropdown.dart';
 import '../../../widgets/custom_elevated_button.dart';
-import '../../../widgets/custom_image_view.dart';
 import '../../../widgets/custom_text_form_field.dart';
-import '../../auth/signup_screen.dart';
 
 enum Verify { yes, no }
 
@@ -126,6 +120,7 @@ class _ReassignSurgeryState extends State<ReassignSurgery> {
                   if (value!.isEmpty) {
                     return "Please enter patient name";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 10.h),
@@ -246,6 +241,7 @@ class _ReassignSurgeryState extends State<ReassignSurgery> {
                   if (value == null || value.isEmpty) {
                     return "Please enter date";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 10.h),
@@ -265,6 +261,7 @@ class _ReassignSurgeryState extends State<ReassignSurgery> {
                   if (value == null || value.isEmpty) {
                     return "Please enter description";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 10.h),

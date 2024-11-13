@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'PVI NHM',
-
         locale: Get.deviceLocale,
         //home: const LoginScreen(),
         navigatorKey: navigatorKey,

@@ -184,7 +184,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Obx(() {
       if (patientController.rxRequestStatus.value == Status.loading) {
         return SizedBox(
-            height: size.height * 0.3, child: Center(child: CustomLoading()));
+            height: size.height * 0.3,
+            child: const Center(child: CustomLoading()));
       }
       if (patientController.patientList.isEmpty) {
         return Padding(
@@ -197,7 +198,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return SizedBox(
         height: size.height / 1.30,
         child: ListView.builder(
-            padding: EdgeInsets.all(0.0),
+            padding:const EdgeInsets.all(0.0),
             itemCount: patientController.patientList.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {
@@ -263,7 +264,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return SizedBox(
         height: size.height / 1.25,
         child: ListView.builder(
-            padding: EdgeInsets.all(0.0),
+            padding: const EdgeInsets.all(0.0),
             itemCount: patientController.assignedSurgeryList.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {
@@ -272,7 +273,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // DateTime surgeryDate = DateFormat("yyyy-MM-ddTHH:mm:ss.SSSZ")
               //     .parse(upcomingPatientList..surgeryDate!);
-              final  dateFormat = DateFormat('dd');
+              final dateFormat = DateFormat('dd');
               final dateDay = DateFormat('EEE');
               // final formattedDate =
               //     dateFormat.format(surgeryDate).toUpperCase();

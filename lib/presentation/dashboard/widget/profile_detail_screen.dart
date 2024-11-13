@@ -3,13 +3,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:pvi_nhm/data/model/user_list_model.dart';
 import 'package:pvi_nhm/theme/text_style.dart';
 import 'package:pvi_nhm/widgets/app_bar_container.dart';
-
-import '../../../core/constants/api_network.dart';
 import '../../../core/constants/app_export.dart';
-import '../../../data/model/patient_model.dart';
 import '../../../theme/color_constants.dart';
-import '../../../widgets/custom_elevated_button.dart';
-import '../../../widgets/doctor_card_widget.dart';
+
 
 class ProfileDetailScreen extends StatelessWidget {
   const ProfileDetailScreen({super.key});

@@ -1,8 +1,6 @@
 import 'package:pvi_nhm/core/constants/app_export.dart';
-import 'package:pvi_nhm/data/model/patient_model.dart';
 import 'package:pvi_nhm/data/model/reassign_surgery_model.dart';
 import 'package:timeago/timeago.dart' as timeago;
-
 import '../../../../controllers/auth_controller.dart';
 import '../../../../controllers/patient_controller.dart';
 import '../../../../data/apiClient/http_response.dart';
@@ -27,7 +25,7 @@ class ReassignedListSearchController extends GetxController {
 
     if (searchQuery.isNotEmpty) {
       filteredList = filteredList.where((patient) {
-        final nameMatch = patient.patient!.patientName
+        final nameMatch = patient.patient.patientName
                 ?.toLowerCase()
                 .contains(searchQuery.toLowerCase()) ??
             false;

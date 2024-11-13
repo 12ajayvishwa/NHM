@@ -269,7 +269,7 @@ class _EditProfileState extends State<EditProfile> {
                                     child: settingController
                                                 .rxRequestStatus.value ==
                                             Status.loading
-                                        ? CustomLoading()
+                                        ? const CustomLoading()
                                         : CustomElevatedButton(
                                             text: "Submit",
                                             onTap: () {

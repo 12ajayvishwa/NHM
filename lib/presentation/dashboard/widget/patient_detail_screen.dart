@@ -124,24 +124,24 @@ class _PatientDetailScreenState extends State<PatientDetailScreen> {
           SessionManager.getUserTypeId() == "2"
               ? buildFieldWidget(
                   "Assigned Doctor",
-                  "Dr. ${data.doctor!.name.toString().capitalizeFirst}" ??
+                  "Dr. ${data.doctor.name.toString().capitalizeFirst}" ??
                       "N/A")
               : SessionManager.getUserTypeId() == "3"
                   ? buildFieldWidget(
                       "Assigned Doctor",
-                      "Superviser. ${data.approver!.name.toString().capitalizeFirst}" ??
+                      "Superviser. ${data.approver.name.toString().capitalizeFirst}" ??
                           "N/A")
                   : Container(),
           SessionManager.getUserTypeId() == "1"
               ? buildFieldWidget(
                   "Assigned Doctor",
-                  "Dr. ${data.doctor!.name.toString().capitalizeFirst}" ??
+                  "Dr. ${data.doctor.name.toString().capitalizeFirst}" ??
                       "N/A")
               : Container(),
           SessionManager.getUserTypeId() == "1"
               ? buildFieldWidget(
                   "Assigned Doctor",
-                  "Sv. ${data.approver!.name.toString().capitalizeFirst}" ??
+                  "Sv. ${data.approver.name.toString().capitalizeFirst}" ??
                       "N/A")
               : Container(),
           buildFieldWidget(

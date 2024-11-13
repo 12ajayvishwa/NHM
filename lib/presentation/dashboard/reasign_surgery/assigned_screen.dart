@@ -13,7 +13,6 @@ import '../../../theme/text_style.dart';
 import '../../../utils/custom_toast.dart';
 import '../../../widgets/custom_circuler_loader.dart';
 import '../../../widgets/custom_text_form_field.dart';
-import '../../../widgets/doctor_card_widget.dart';
 import '../../../widgets/reasign_surgery_card.dart';
 import 'search_controller/assigned_list_search.dart';
 
@@ -67,7 +66,7 @@ class _AssignedSurgeryScreenState extends State<AssignedSurgeryScreen> {
                       onPressed: () {
                         Get.offAllNamed(AppRoutes.DASHBOARD, arguments: [1, 0]);
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back,
                       )),
                 ),
@@ -146,23 +145,23 @@ class _AssignedSurgeryScreenState extends State<AssignedSurgeryScreen> {
                             Get.toNamed(AppRoutes.Assigned_Surgery_Details,
                                 arguments: data);
                           },
-                          name: data.patient!.patientName,
-                          designation: data.patient!.electiveSurgery,
+                          name: data.patient.patientName,
+                          designation: data.patient.electiveSurgery,
                         
                           description: data.description,
                           status: data.status,
                           title: data.title,
-                          age: data.patient!.age,
-                          date: data.dateTime!,
+                          age: data.patient.age,
+                          date: data.dateTime,
                           approvalDoc: SessionManager.getUserTypeId() == "3"
-                              ? "Approval : ${data.approver!.name.toString()}"
+                              ? "Approval : ${data.approver.name.toString()}"
                               : SessionManager.getUserTypeId() == "2"
-                                  ? "Doctor :  ${data.doctor!.name.toString()}"
+                                  ? "Doctor :  ${data.doctor.name.toString()}"
                                   : SessionManager.getUserTypeId() == "1"
-                                      ? "Approval : ${data.approver!.name.toString()}"
+                                      ? "Approval : ${data.approver.name.toString()}"
                                       : null,
                           secondApDoc: SessionManager.getUserTypeId() == "1"
-                              ? "Doctor :  ${data.doctor!.name.toString()}"
+                              ? "Doctor :  ${data.doctor.name.toString()}"
                               : null,
                         );
                       },

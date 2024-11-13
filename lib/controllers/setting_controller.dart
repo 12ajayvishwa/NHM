@@ -15,9 +15,10 @@ class SettingController extends GetxController {
   NetworkHttpServices api = NetworkHttpServices();
   ImagePickerController imagePickerController =
       Get.put(ImagePickerController());
-  //final settingList = SettingModel().obs;
 
-// Registration Details
+//final settingList = SettingModel().obs;
+
+  // Registration Details
   final name = TextEditingController().obs;
   final designation = TextEditingController().obs;
   final editPhone = TextEditingController().obs;
@@ -30,7 +31,8 @@ class SettingController extends GetxController {
   final currentPassword = TextEditingController().obs;
   final newPassword = TextEditingController().obs;
   final confirmPassword = TextEditingController().obs;
-// Contact And Support
+
+  // Contact And Support
   final contactName = TextEditingController().obs;
   final contactPhoneNo = TextEditingController().obs;
   final contactEmail = TextEditingController().obs;
@@ -40,7 +42,6 @@ class SettingController extends GetxController {
 
   contactAndSupport() async {
     rxRequestStatus.value = Status.loading;
-
     // ignore: empty_catches
     try {} catch (e) {}
   }

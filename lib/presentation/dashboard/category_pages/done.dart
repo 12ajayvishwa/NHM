@@ -22,7 +22,7 @@ class _DoneScreenState extends State<DoneScreen> {
           appBarContainer(size, title: "All Done", isLeading: true),
           Expanded(
             child: Container(
-              child: Center(
+              child: const Center(
                 child: Text("All Done"),
               ),
             ),

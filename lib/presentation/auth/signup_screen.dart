@@ -1,7 +1,6 @@
 // ignore_for_file: avoid_print
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../core/constants/app_export.dart';
 import '../../core/routes/app_routes.dart';
 import '../../data/apiClient/http_response.dart';
@@ -11,7 +10,6 @@ import '../../utils/custom_toast.dart';
 import '../../utils/validation_functions.dart';
 import '../../widgets/app_bar_container.dart';
 import '../../widgets/custom_circuler_loader.dart';
-import '../../widgets/custom_dropdown.dart';
 import '../../widgets/custom_elevated_button.dart';
 import '../../widgets/custom_image_view.dart';
 import '../../widgets/custom_text_form_field.dart';

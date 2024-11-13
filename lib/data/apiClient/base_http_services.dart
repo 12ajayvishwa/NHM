@@ -8,5 +8,5 @@ abstract class BaseHttpServices {
     dynamic file,
     dynamic body,
     String method,
-  );
+  ); 
 }

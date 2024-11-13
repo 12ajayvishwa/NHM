@@ -1,7 +1,6 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pvi_nhm/controllers/patient_controller.dart';
-import 'package:pvi_nhm/data/model/patient_model.dart';
 import 'package:pvi_nhm/data/model/reassign_surgery_model.dart';
 import 'package:pvi_nhm/theme/text_style.dart';
 import 'package:pvi_nhm/widgets/app_bar_container.dart';

@@ -9,8 +9,6 @@ import '../../utils/custom_toast.dart';
 import '../../widgets/custom_image_view.dart';
 import 'home/home.dart';
 import 'patient/patient_screen.dart';
-import 'reasign_surgery/assigned_screen.dart';
-import 'users/add_user.dart';
 import 'users/users_screen.dart';
 
 var tabIndexOfApn;

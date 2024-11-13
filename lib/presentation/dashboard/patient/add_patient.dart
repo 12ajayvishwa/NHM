@@ -23,7 +23,7 @@ import '../../auth/signup_screen.dart';
 enum Verify { yes, no }
 
 class AddPatientScreen extends StatefulWidget {
-  AddPatientScreen({super.key});
+  const AddPatientScreen({super.key});
 
   @override
   State<AddPatientScreen> createState() => _AddPatientScreenState();
@@ -94,7 +94,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
   addPatientForm(size) {
     return Obx(() {
       if (userController.rxRequestStatus.value == Status.loading) {
-        return CustomLoading();
+        return const CustomLoading();
       }
       return Container(
         height: size.height,
@@ -126,6 +126,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
                   if (value!.isEmpty) {
                     return "Please enter patient name";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 15.h),
@@ -141,6 +142,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
                   if (value!.isEmpty) {
                     return "Please enter name";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 15.h),

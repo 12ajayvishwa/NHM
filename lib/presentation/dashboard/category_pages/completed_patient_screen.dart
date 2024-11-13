@@ -23,7 +23,7 @@ class _CompletedPatientScreenState extends State<CompletedPatientScreen> {
           appBarContainer(size, title: "All Complete", isLeading: true),
           Expanded(
             child: Container(
-              child: Center(
+              child: const Center(
                 child: Text("All Complete"),
               ),
             ),
